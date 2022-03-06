@@ -46,4 +46,8 @@ public class FileHandler {
             return "Error opening file";
         }
     }
+    
+    public static boolean hasNext(){
+        return reader.hasNextLine();
+    }
 }
