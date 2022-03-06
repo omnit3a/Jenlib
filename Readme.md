@@ -78,5 +78,7 @@ The **Parsers.hasNext();** method returns true if there are more tokens, otherwi
 
 ## Miscellaneous methods
 > Init.init(String type, String filePath, String extension)<br>
+> FileHandler.hasNext();
 
-The **Init.init();** method does most of the work of loading the file you want to read and initializing the data storage.
+The **Init.init();** method does most of the work of loading the file you want to read and initializing the data storage.<br>
+the **FileHandler.hasNext();** method returns true if there are more lines in a file, otherwise, return false.
