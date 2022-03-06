@@ -1,4 +1,8 @@
 # JenLib v1.0 Documentation
+
+## What is Jenlib?
+Jenlib is a library written (and for) Java, which is intended to be used as a base for prototyping custom programming languages.
+
 ## File Handling
 There are two functions for opening a file, those being:<br>
 >FileHandler.readLine(String filePath, int line, String extension);<br>
