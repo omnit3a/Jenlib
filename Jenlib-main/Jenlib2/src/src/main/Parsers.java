@@ -20,6 +20,14 @@ public class Parsers {
         }
     }
 
+    public static boolean hasNext(){
+        try {
+            return st.hasMoreTokens();
+        } catch (Exception e){
+            return false;
+        }
+    }
+
     public static void setContents(String contains){
         contents = contains;
     }

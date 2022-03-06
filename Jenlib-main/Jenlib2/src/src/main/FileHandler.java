@@ -6,9 +6,11 @@ import java.util.Scanner;
 public class FileHandler {
     private static Scanner reader;
 
-    public static String readLine(String filename, int line, String extension){
+    public static String readLine(String filePath, int line, String extension){
         File file;
+        String filename = filePath;
         try {
+            filename = filename.concat(extension);
             if (filename.endsWith(extension)) {
                 file = new File(filename);
                 reader = new Scanner(file);
@@ -24,10 +26,12 @@ public class FileHandler {
         }
     }
 
-    public static String readFile(String filename, String extension){
+    public static String readFile(String filePath, String extension){
         File file;
         String contents = "";
+        String filename = filePath;
         try {
+            filename = filename.concat(extension);
             if (filename.endsWith(extension)) {
                 file = new File(filename);
                 reader = new Scanner(file);
